@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-[View My CV](../files/CV.pdf)
+[View My CV](../files/CV_Gen_Li.pdf)
