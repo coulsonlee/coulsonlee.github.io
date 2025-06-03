@@ -1,15 +1,4 @@
----
-permalink: /
-title: "About Me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
-
 <style>
-  /* 整体字体与容器基础样式 */
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -23,7 +12,6 @@ redirect_from:
     padding: 20px;
   }
 
-  /* About Me 区块 */
   .about-section {
     margin-bottom: 40px;
   }
@@ -44,7 +32,6 @@ redirect_from:
     text-decoration: underline;
   }
 
-  /* News 区块 */
   .news-section {
     margin-bottom: 50px;
   }
@@ -84,17 +71,37 @@ redirect_from:
     color: #0066cc;
   }
 
-  /* Selected Publications 区块 */
   .pub-section h2 {
     font-size: 1.5rem;
     margin-bottom: 12px;
     color: #222;
   }
+
+  /* 这部分是新增的：限制高度并启用滚动 */
+  .pub-list-container {
+    max-height: 600px;        /* 根据实际需要，自行调整 */
+    overflow-y: auto;
+    padding-right: 6px;       /* 给滚动条留空隙 */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+  }
+  .pub-list-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  .pub-list-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+  .pub-list-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
   .publication-card {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 15px 18px;
-    margin-bottom: 16px;
+    margin: 12px;
     transition: box-shadow 0.25s ease;
     position: relative;
     background-color: #fff;
@@ -116,7 +123,7 @@ redirect_from:
   }
   .publication-card .meta {
     font-size: 0.9rem;
-    color: #555;
+    color: #333;   /* 改为更深色 */
   }
   .publication-card .meta a {
     color: #0066cc;
@@ -153,7 +160,6 @@ redirect_from:
 
   <!-- About Me -->
   <div class="about-section">
-    <h1>About Me</h1>
     <p>
       <strong>Gen Li</strong> is a third-year Ph.D. student at Clemson University, 
       supervised by Prof. 
@@ -184,118 +190,128 @@ redirect_from:
   <!-- Selected Publications -->
   <div class="pub-section">
     <h2>Selected Publications</h2>
-
-    <div class="publication-card">
-      <h3>Adversarial Robust ViT-based Automatic Modulation Recognition in Practical Deep Learning-based Wireless Systems</h3>
-      <div class="authors">Gen Li, Chun-Chih Lin, Xiaonan Zhang, Xiaolong Ma, Linke Guo</div>
-      <div class="meta">
-        <span class="pub-badge">S&P ’25</span> · Acceptance rate: 14.3% · 
-        <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a030/21B7Qkjltcs" target="_blank" rel="noopener noreferrer">
-          Paper Link
+    <div class="pub-list-container">
+      <!-- publication-card 1 -->
+      <div class="publication-card">
+        <h3>Adversarial Robust ViT-based Automatic Modulation Recognition in Practical Deep Learning-based Wireless Systems</h3>
+        <div class="authors">Gen Li, Chun-Chih Lin, Xiaonan Zhang, Xiaolong Ma, Linke Guo</div>
+        <div class="meta">
+          <span class="pub-badge">S&P ’25</span> · Acceptance rate: 14.3% · 
+          <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a030/21B7Qkjltcs" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a030/21B7Qkjltcs" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a030/21B7Qkjltcs" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>A Single-Step, Sharpness-Aware Minimization is All You Need to Achieve Efficient and Accurate Sparse Training</h3>
-      <div class="authors">Jie Ji, Gen Li, Jingjing Fu, Fatemeh Afghah, Linke Guo, Xiaoyong Yuan, Xiaolong Ma</div>
-      <div class="meta">
-        <span class="pub-badge">NeurIPS ’24</span> · Acceptance rate: 25.8% · 
-        <a href="https://openreview.net/forum?id=MJgMMqMDu4" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 2 -->
+      <div class="publication-card">
+        <h3>A Single-Step, Sharpness-Aware Minimization is All You Need to Achieve Efficient and Accurate Sparse Training</h3>
+        <div class="authors">Jie Ji, Gen Li, Jingjing Fu, Fatemeh Afghah, Linke Guo, Xiaoyong Yuan, Xiaolong Ma</div>
+        <div class="meta">
+          <span class="pub-badge">NeurIPS ’24</span> · Acceptance rate: 25.8% · 
+          <a href="https://openreview.net/forum?id=MJgMMqMDu4" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://openreview.net/forum?id=MJgMMqMDu4" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://openreview.net/forum?id=MJgMMqMDu4" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>Data Overfitting for On-Device Super-Resolution with Dynamic Algorithm and Compiler Co-Design</h3>
-      <div class="authors">Gen Li, Zhihao Shu, Jie Ji, Minghai Qin, Fatemeh Afghah, Wei Niu, Xiaolong Ma</div>
-      <div class="meta">
-        <span class="pub-badge">ECCV ’24</span> · Acceptance rate: 27.9% · 
-        <a href="https://arxiv.org/abs/2407.02813" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 3 -->
+      <div class="publication-card">
+        <h3>Data Overfitting for On-Device Super-Resolution with Dynamic Algorithm and Compiler Co-Design</h3>
+        <div class="authors">Gen Li, Zhihao Shu, Jie Ji, Minghai Qin, Fatemeh Afghah, Wei Niu, Xiaolong Ma</div>
+        <div class="meta">
+          <span class="pub-badge">ECCV ’24</span> · Acceptance rate: 27.9% · 
+          <a href="https://arxiv.org/abs/2407.02813" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://arxiv.org/abs/2407.02813" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://arxiv.org/abs/2407.02813" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>Advancing Dynamic Sparse Training by Exploring Optimization Opportunities</h3>
-      <div class="authors">Jie Ji*, Gen Li*, Lu Yin, Minghai Qin, Geng Yuan, Linke Guo, Shiwei Liu, Xiaolong Ma</div>
-      <div class="meta">
-        <span class="pub-badge">ICML ’24</span> · Acceptance rate: 27.5% · 
-        <a href="https://openreview.net/forum?id=szRHR9XGrY" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 4 -->
+      <div class="publication-card">
+        <h3>Advancing Dynamic Sparse Training by Exploring Optimization Opportunities</h3>
+        <div class="authors">Jie Ji*, Gen Li*, Lu Yin, Minghai Qin, Geng Yuan, Linke Guo, Shiwei Liu, Xiaolong Ma</div>
+        <div class="meta">
+          <span class="pub-badge">ICML ’24</span> · Acceptance rate: 27.5% · 
+          <a href="https://openreview.net/forum?id=szRHR9XGrY" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://openreview.net/forum?id=szRHR9XGrY" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://openreview.net/forum?id=szRHR9XGrY" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity</h3>
-      <div class="authors">Lu Yin, You Wu, Zhenyu Zhang, Cheng-Yu Hsieh, Yaqing Wang, Yiling Jia, Gen Li, Ajay Jaiswal, Mykola Pechenizkiy, Yi Liang, Michael Bendersky, Zhangyang Wang, Shiwei Liu</div>
-      <div class="meta">
-        <span class="pub-badge">ICML ’24</span> · Acceptance rate: 27.5% · 
-        <a href="https://arxiv.org/abs/2310.05175" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 5 -->
+      <div class="publication-card">
+        <h3>Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity</h3>
+        <div class="authors">Lu Yin, You Wu, Zhenyu Zhang, Cheng-Yu Hsieh, Yaqing Wang, Yiling Jia, Gen Li, Ajay Jaiswal, Mykola Pechenizkiy, Yi Liang, Michael Bendersky, Zhangyang Wang, Shiwei Liu</div>
+        <div class="meta">
+          <span class="pub-badge">ICML ’24</span> · Acceptance rate: 27.5% · 
+          <a href="https://arxiv.org/abs/2310.05175" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://arxiv.org/abs/2310.05175" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://arxiv.org/abs/2310.05175" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>NeurRev: Train Better Sparse Neural Network Practically via Neuron Revitalization</h3>
-      <div class="authors">Gen Li, Lu Yin, Jie Ji, Wei Niu, Minghai Qin, Bin Ren, Linke Guo, Shiwei Liu, Xiaolong Ma</div>
-      <div class="meta">
-        <span class="pub-badge">ICLR ’24</span> · Acceptance rate: 31% · 
-        <a href="https://openreview.net/forum?id=60lNoatp7u" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 6 -->
+      <div class="publication-card">
+        <h3>NeurRev: Train Better Sparse Neural Network Practically via Neuron Revitalization</h3>
+        <div class="authors">Gen Li, Lu Yin, Jie Ji, Wei Niu, Minghai Qin, Bin Ren, Linke Guo, Shiwei Liu, Xiaolong Ma</div>
+        <div class="meta">
+          <span class="pub-badge">ICLR ’24</span> · Acceptance rate: 31% · 
+          <a href="https://openreview.net/forum?id=60lNoatp7u" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://openreview.net/forum?id=60lNoatp7u" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://openreview.net/forum?id=60lNoatp7u" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>Dynamic Sparsity Is Channel-Level Sparsity Learner</h3>
-      <div class="authors">Lu Yin, Gen Li, Meng Fang, Li Shen, Tianjin Huang, Zhangyang Wang, Vlado Menkovski, Xiaolong Ma, Mykola Pechenizkiy, Shiwei Liu</div>
-      <div class="meta">
-        <span class="pub-badge">NeurIPS ’23</span> · Acceptance rate: 26.1% · 
-        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d6d0e41e0b1ed38c76d13c9e417a8f1f-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 7 -->
+      <div class="publication-card">
+        <h3>Dynamic Sparsity Is Channel-Level Sparsity Learner</h3>
+        <div class="authors">Lu Yin, Gen Li, Meng Fang, Li Shen, Tianjin Huang, Zhangyang Wang, Vlado Menkovski, Xiaolong Ma, Mykola Pechenizkiy, Shiwei Liu</div>
+        <div class="meta">
+          <span class="pub-badge">NeurIPS ’23</span> · Acceptance rate: 26.1% · 
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d6d0e41e0b1ed38c76d13c9e417a8f1f-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d6d0e41e0b1ed38c76d13c9e417a8f1f-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d6d0e41e0b1ed38c76d13c9e417a8f1f-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-    <div class="publication-card">
-      <h3>Towards High-Quality and Efficient Video Super-Resolution via Spatial-Temporal Data Overfitting</h3>
-      <div class="authors">Gen Li, Jie Ji, Minghai Qin, Wei Niu, Bin Ren, Fatemeh Afghah, Linke Guo, Xiaolong Ma</div>
-      <div class="meta">
-        <span class="pub-badge">CVPR ’23</span> · Highlight paper (top 2.5%) · 
-        <a href="https://ieeexplore.ieee.org/abstract/document/10203894" target="_blank" rel="noopener noreferrer">
-          Paper Link
+      <!-- publication-card 8 -->
+      <div class="publication-card">
+        <h3>Towards High-Quality and Efficient Video Super-Resolution via Spatial-Temporal Data Overfitting</h3>
+        <div class="authors">Gen Li, Jie Ji, Minghai Qin, Wei Niu, Bin Ren, Fatemeh Afghah, Linke Guo, Xiaolong Ma</div>
+        <div class="meta">
+          <span class="pub-badge">CVPR ’23</span> · Highlight paper (top 2.5%) · 
+          <a href="https://ieeexplore.ieee.org/abstract/document/10203894" target="_blank" rel="noopener noreferrer">
+            Paper Link
+          </a>
+        </div>
+        <a class="pdf-link" href="https://ieeexplore.ieee.org/abstract/document/10203894" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
         </a>
       </div>
-      <a class="pdf-link" href="https://ieeexplore.ieee.org/abstract/document/10203894" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pdf.svg" alt="PDF">
-      </a>
-    </div>
 
-  </div>
-</div>
+    </div> <!-- /.pub-list-container -->
+  </div> <!-- /.pub-section -->
+
+</div> <!-- /.container -->
