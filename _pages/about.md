@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+Gen Li is a third-year Ph.D. student at Clemson University, under the supervision of Prof. [Xiaolong Ma](https://xiaolongma2016.com/) and co-advised by Prof. [Linlke Guo](https://cecas.clemson.edu/~linkeg/index.html). His primary research focuses on efficient Machine Learning, algorithm-hardware co-design for mobile devices, and fairness and robustness in broad AI applications.
 
 <style>
   body {
@@ -168,20 +168,6 @@ redirect_from:
 </style>
 
 <div class="container">
-
-  <!-- About Me -->
-  <div class="about-section">
-    <p>
-      <strong>Gen Li</strong> is a third-year Ph.D. student at Clemson University, 
-      supervised by Prof. 
-      <a href="https://xiaolongma2016.com/" target="_blank" rel="noopener noreferrer">Xiaolong Ma</a> 
-      and co-advised by Prof. 
-      <a href="https://cecas.clemson.edu/~linkeg/index.html" target="_blank" rel="noopener noreferrer">Linke Guo</a>. 
-      His primary research interests span efficient Machine Learning, 
-      algorithm-hardware co-design for mobile devices, 
-      and fairness & robustness in broad AI applications.
-    </p>
-  </div>
 
   <!-- News -->
   <div class="news-section">
