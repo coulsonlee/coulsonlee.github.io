@@ -7,184 +7,50 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 Gen Li is a third-year Ph.D. student at Clemson University, under the supervision of Prof. [Xiaolong Ma](https://xiaolongma2016.com/) and co-advised by Prof. [Linlke Guo](https://cecas.clemson.edu/~linkeg/index.html). His primary research focuses on efficient Machine Learning, algorithm-hardware co-design for mobile devices, and fairness and robustness in broad AI applications.
 
-<style>
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+<div style="font-family: Arial, sans-serif; margin-top: 20px;">
+  <style>
+    .news-container {
+      width: 100%; /* Occupies the full width of the page */
+      max-width: 1200px; /* Optional: set a maximum width for readability */
+      height: 300px; /* Fixed height */
+      border: 2px solid #dfdfdf; /* Light gray border */
+      border-radius: 3px;
+      padding: 3px;
+      overflow-y: auto; /* Enable vertical scrolling */
+      background-color: #f9f9f9; /* Light background color */
+      margin-bottom: 30px;
+    }
+    .news-container h2 {
+      margin: 0 0 10px; /* Compact title spacing */
+      font-size: 15px; /* Adjust font size */
+      color: #333; /* Darker text for title */
+    }
+    .news-item {
+      margin: 0;
+      padding: 0.5px 0; /* Reduce padding for compactness */
+      font-size: 14px; /* Smaller font for compact display */
+      color: #555; /* Slightly muted text color */
+    }
+  </style>
+</div>
 
-  .about-section {
-    margin-bottom: 40px;
-  }
-  .about-section h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  .about-section p {
-    font-size: 1rem;
-    margin: 8px 0;
-  }
-  .about-section a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  .about-section a:hover {
-    text-decoration: underline;
-  }
-
-  .news-section {
-    margin-bottom: 50px;
-  }
-  .news-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-    color: #222;
-  }
-  .news-title::before {
-    content: "📰";
-    margin-right: 8px;
-    font-size: 1.8rem;
-  }
-  .news-list {
-    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 12px 16px;
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  .news-item {
-    font-size: 0.95rem;
-    color: #555;
-    margin: 6px 0;
-    position: relative;
-    padding-left: 20px;
-  }
-  .news-item::before {
-    content: "●";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    font-size: 0.6rem;
-    color: #0066cc;
-  }
-
-  .pub-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-    color: #222;
-  }
-
-  /* 这部分是新增的：限制高度并启用滚动 */
-  .pub-list-container {
-    max-height: 600px;        /* 根据实际需要，自行调整 */
-    overflow-y: auto;
-    padding-right: 6px;       /* 给滚动条留空隙 */
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #fafafa;
-  }
-  .pub-list-container::-webkit-scrollbar {
-    width: 6px;
-  }
-  .pub-list-container::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-  }
-  .pub-list-container::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  .publication-card {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 15px 18px;
-    margin: 12px;
-    transition: box-shadow 0.25s ease;
-    position: relative;
-    background-color: #fff;
-  }
-  .publication-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-color: #ccc;
-  }
-  .publication-card h3 {
-    font-size: 1.1rem;
-    margin: 4px 0 6px 0;
-    color: #111;
-  }
-  .publication-card .authors {
-    font-size: 0.95rem;
-    color: #4fb2d9;
-    margin-bottom: 6px;
-    font-style: italic;
-  }
-  .publication-card .meta {
-    font-size: 0.9rem;
-    color: #333;   /* 改为更深色 */
-  }
-  .publication-card .meta a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  .publication-card .meta a:hover {
-    text-decoration: underline;
-  }
-  .pub-badge {
-    display: inline-block;
-    background-color: #ffecec;
-    color: #a94442;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 0.85rem;
-    vertical-align: middle;
-    margin-right: 6px;
-  }
-  .pdf-link {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    width: 20px;
-    height: 20px;
-  }
-  .pdf-link img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-</style>
-
-<div class="container">
-
-  <!-- News -->
-  <div class="news-section">
-    <div class="news-title">Latest News</div>
-    <div class="news-list">
-      <div class="news-item">09/2024 — Paper accepted at <strong>NeurIPS 2024</strong>.</div>
-      <div class="news-item">09/2024 — Paper accepted at <strong>S&P 2025</strong>.</div>
-      <div class="news-item">07/2024 — Paper accepted at <strong>ECCV 2024</strong>.</div>
-      <div class="news-item">05/2024 — Two papers accepted at <strong>ICML 2024</strong>.</div>
-      <div class="news-item">01/2024 — Paper accepted at <strong>ICLR 2024</strong>.</div>
-      <div class="news-item">09/2023 — Paper accepted at <strong>NeurIPS 2023</strong>.</div>
-      <div class="news-item">02/2023 — “Spotlight” paper at ICLR SNN Workshop.</div>
-      <div class="news-item">02/2023 — “Highlight” paper (top 2.5%) at <strong>CVPR 2023</strong>.</div>
-    </div>
+🔥 News
+======
+  <div class="news-container">
+    <p class="news-item">09/2024, One paper is accepted in NeurIPS 2024.</p>
+    <p class="news-item">09/2024, One paper is accepted in S&P 2025.</p>
+    <p class="news-item">07/2024, One paper is accepted in ECCV 2024.</p>
+    <p class="news-item">05/2024, Two papers are accepted in ICML 2024.</p>
+    <p class="news-item">01/2024, One paper is accepted in ICLR 2024.</p>
+    <p class="news-item">09/2023, One paper is accepted in NeurIPS 2023.</p>
+    <p class="news-item">02/2023, One paper is accepted with spotlight presentation at the ICLR SNN workshop.</p>
+    <p class="news-item">02/2023, One paper is accepted as highlight paper (top 2.5%) in CVPR 2023.</p>
   </div>
 
-  <!-- Selected Publications -->
+
 Selected Publications
 ======
 <div style="font-family: Arial, sans-serif;">
