@@ -10,45 +10,56 @@ redirect_from:
 
 Gen Li is a third-year Ph.D. student at Clemson University, under the supervision of Prof. [Xiaolong Ma](https://xiaolongma2016.com/) and co-advised by Prof. [Linlke Guo](https://cecas.clemson.edu/~linkeg/index.html). His primary research focuses on efficient Machine Learning, algorithm-hardware co-design for mobile devices, and fairness and robustness in broad AI applications.
 
-<div style="font-family: Arial, sans-serif; margin-top: 20px;">
-  <style>
-    .news-container {
-      width: 100%; /* Occupies the full width of the page */
-      max-width: 1200px; /* Optional: set a maximum width for readability */
-      height: 300px; /* Fixed height */
-      border: 2px solid #dfdfdf; /* Light gray border */
-      border-radius: 3px;
-      padding: 3px;
-      overflow-y: auto; /* Enable vertical scrolling */
-      background-color: #f9f9f9; /* Light background color */
-      margin-bottom: 30px;
-    }
-    .news-container h2 {
-      margin: 0 0 10px; /* Compact title spacing */
-      font-size: 15px; /* Adjust font size */
-      color: #333; /* Darker text for title */
-    }
-    .news-item {
-      margin: 0;
-      padding: 0.5px 0; /* Reduce padding for compactness */
-      font-size: 14px; /* Smaller font for compact display */
-      color: #555; /* Slightly muted text color */
-    }
-  </style>
+<style>
+  .news-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;                 /* 保留固定高度 */
+    padding: 16px;                 /* 加大内边距，显得更舒适 */
+    overflow-y: auto;              /* 保留上下滑动 */
+    background-color: #f5f5f7;     /* 高级感浅灰 */
+    border: 1px solid #e0e0e0;     /* 更细更浅的边框 */
+    border-radius: 8px;            /* 圆角更明显 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);  /* 轻微阴影增添层次 */
+    margin-bottom: 30px;
+  }
+  .news-container .news-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0 0 12px;
+    font-weight: bold;
+  }
+  .news-container .news-item {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    margin: 8px 0;
+    padding-left: 12px;
+    position: relative;
+  }
+  .news-container .news-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    font-size: 1rem;
+    color: #999;
+  }
+</style>
+
+<div class="news-container">
+  <div class="news-title">Latest News</div>
+  <p class="news-item">09/2024 — Paper accepted at <strong>NeurIPS 2024</strong>.</p>
+  <p class="news-item">09/2024 — Paper accepted at <strong>S&P 2025</strong>.</p>
+  <p class="news-item">07/2024 — Paper accepted at <strong>ECCV 2024</strong>.</p>
+  <p class="news-item">05/2024 — Two papers accepted at <strong>ICML 2024</strong>.</p>
+  <p class="news-item">01/2024 — Paper accepted at <strong>ICLR 2024</strong>.</p>
+  <p class="news-item">09/2023 — Paper accepted at <strong>NeurIPS 2023</strong>.</p>
+  <p class="news-item">02/2023 — “Spotlight” paper at ICLR SNN Workshop.</p>
+  <p class="news-item">02/2023 — “Highlight” paper (top 2.5%) at <strong>CVPR 2023</strong>.</p>
 </div>
 
-🔥 News
-======
-  <div class="news-container">
-    <p class="news-item">09/2024, One paper is accepted in NeurIPS 2024.</p>
-    <p class="news-item">09/2024, One paper is accepted in S&P 2025.</p>
-    <p class="news-item">07/2024, One paper is accepted in ECCV 2024.</p>
-    <p class="news-item">05/2024, Two papers are accepted in ICML 2024.</p>
-    <p class="news-item">01/2024, One paper is accepted in ICLR 2024.</p>
-    <p class="news-item">09/2023, One paper is accepted in NeurIPS 2023.</p>
-    <p class="news-item">02/2023, One paper is accepted with spotlight presentation at the ICLR SNN workshop.</p>
-    <p class="news-item">02/2023, One paper is accepted as highlight paper (top 2.5%) in CVPR 2023.</p>
-  </div>
 
 
 Selected Publications
