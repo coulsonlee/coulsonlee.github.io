@@ -95,6 +95,16 @@ Selected Publications
   <!-- First Paper -->
   
   <div class="publication-card">
+    <h3 style="margin: 5px 0;">Sculpting Memory: Multi-Concept Forgetting in Diffusion Models via Dynamic Mask and Concept-Aware Optimization</h3>
+    <p style="margin: 5px 0; color: #4fb2d9;"><i>Gen Li, Yang Xiao, Jie Ji, Kaiyuan Deng, Bo Hui, Linke Guo, Xiaolong Ma</i></p>
+    <p style="margin: 5px 0;"><span style="background-color: #f2dede; padding: 2px 5px; border-radius: 3px;">ICCV '25</span> &middot; Acceptance rate: 24% &middot; <a href="https://arxiv.org/abs/2504.09039" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          style="text-decoration: none; color: #007BFF;">Paper Link</a>
+    </p>  
+ </div>
+  
+  <div class="publication-card">
     <h3 style="margin: 5px 0;">Adversarial Robust ViT-based Automatic Modulation Recognition in Practical Deep Learning-based Wireless Systems</h3>
     <p style="margin: 5px 0; color: #4fb2d9;"><i>Gen Li, Chun-Chih Lin, Xiaonan Zhang, Xiaolong Ma, Linke Guo</i></p>
     <p style="margin: 5px 0;"><span style="background-color: #f2dede; padding: 2px 5px; border-radius: 3px;">S&P '25</span> &middot; Acceptance rate: 14.3% &middot; <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600a030/21B7Qkjltcs" 
