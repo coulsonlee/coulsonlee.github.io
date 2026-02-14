@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Gen Li is a third-year Ph.D. student at Clemson University, under the supervision of Prof. [Xiaolong Ma](https://xiaolongma2016.com/) and Prof. [Linlke Guo](https://cecas.clemson.edu/~linkeg/index.html). His research focuses on developing efficient and trustworthy machine learning through algorithms and systems that make large-scale models more computationally scalable, resilient to real-world challenges, and aligned with ethical principles.
+Gen Li is a fourth-year Ph.D. student at Clemson University, under the supervision of Prof. [Xiaolong Ma](https://xiaolongma2016.com/) and Prof. [Linlke Guo](https://cecas.clemson.edu/~linkeg/index.html). His research focuses on developing efficient and trustworthy machine learning through algorithms and systems that make large-scale models more computationally scalable, resilient to real-world challenges, and aligned with ethical principles.
 <style>
   .news-container {
     width: 100%;
@@ -49,6 +49,7 @@ Gen Li is a third-year Ph.D. student at Clemson University, under the supervisio
 
 <div class="news-container">
   <div class="news-title">Latest News</div>
+  <p class="news-item">01/2024 — Paper accepted at <strong>ICLR 2026</strong>.</p>
   <p class="news-item">06/2025 — Two papers accepted at <strong>ICCV 2025</strong>.</p>
   <p class="news-item">09/2024 — Paper accepted at <strong>NeurIPS 2024</strong>.</p>
   <p class="news-item">09/2024 — Paper accepted at <strong>S&P 2025</strong>.</p>
