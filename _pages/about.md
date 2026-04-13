@@ -49,6 +49,7 @@ Gen Li is a fourth-year Ph.D. student at Clemson University, under the supervisi
 
 <div class="news-container">
   <div class="news-title">Latest News</div>
+  <p class="news-item">04/2026 — Paper accepted at <strong>CCS 2026</strong>.</p>
   <p class="news-item">03/2026 — Paper accepted at <strong>TMLR</strong>.</p>
   <p class="news-item">03/2026 — Paper accepted at <strong>CVPR 2026 (Findings Track)</strong>.</p>
   <p class="news-item">01/2026 — Paper accepted at <strong>ICLR 2026</strong>.</p>
