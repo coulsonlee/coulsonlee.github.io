@@ -2,6 +2,12 @@
 title: News
 date: 2026-04-15
 items:
+  - date: 2026-09-01
+    date_label: 09/2026
+    title: I serve as an Area Chair for ICLR 2027.
+  - date: 2026-08-01
+    date_label: 08/2026
+    title: Paper accepted to CNS 2026.
   - date: 2026-06-30
     date_label: 06/2026
     title: I am officially Dr. Li!
